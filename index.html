@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector de Aceites | AutoMaster Chile</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bgindex">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: es_ES
+    </script>
+
+    <div class="containerindex" id="container">
+        <section class="card">
+               <section class="slider-banner">
+                <div class="banner" id="banner">
+                <img class="slide" src="imgs/logo-automaster-700x300.png" alt="AutoMaster Chile">
+                </div> 
+            </section>   
+            <!--  banner / info -->  
+            <section class="slider-info">
+            <section class="information">
+                <article id="info">
+                   <!-- slide info personal -->
+                    <div class="slide">
+                       <form class="form" action="">
+                        <h1 class="form-title">¿Qué aceite necesito?</h1>
+                           <!--
+                            <input type="text" class="form-input" placeholder="Pregunta filtro 1">
+                            <input type="text" class="form-input" placeholder="Pregunta filtro 2">
+                            -->
+                            
+                            <!--<select class="form-select">
+								    <option value="seleccione">Tipo de vehículo</option>
+								    <option value="op1">Auto</option>
+								    <option value="op2">Camión</option>
+								    <option value="op3">Bus</option>
+							    </select>-->
+                         <input list="tipos" name="tipo" class="form-select" placeholder="Tipo de vehículo">
+											<datalist id="tipos">
+												<option value="Auto">
+												<option value="Camión">
+												<option value="Bus">
+												<!--<option value="Peugeot">
+												<option value="Renault">
+												<option value="Volkswagen">-->
+											</datalist>  
+                          
+                           <!--
+                            <select class="form-select">
+								    <option value="seleccione">Marca del vehículo</option>
+								    <option value="op1">Chevrolet</option>
+								    <option value="op2">FIAT</option>
+								    <option value="op3">Ford</option>
+								    <option value="op3">Peugeot</option>
+								    <option value="op3">Renault</option>
+								    <option value="op3">Volkswagen</option>
+							    </select>
+                           -->
+                      <input list="marcas" name="marca" class="form-select" placeholder="Marca del vehículo">
+											<datalist id="marcas">
+												<option value="Chevrolet">
+												<option value="FIAT">
+												<option value="Ford">
+												<option value="Peugeot">
+												<option value="Renault">
+												<option value="Volkswagen">
+											</datalist>       
+                            <!--<select class="form-select">
+								    <option value="seleccione">Modelo del vehículo</option>
+								    <option value="op1">Modelo 1</option>
+								    <option value="op2">Modelo 2</option>
+								    <option value="op3">Modelo 3</option>
+								    <option value="op3">Modelo n</option>
+							    </select>-->
+                             <input list="modelos" name="modelo" class="form-select" placeholder="Marca del vehículo">
+											<datalist id="modelos">
+												<option value="Modelo 1">
+												<option value="Modelo 2">
+												<option value="Modelo 3">
+												<option value="Modelo n">
+											</datalist>    
+                             <!--<select class="form-select">
+								    <option value="seleccione">Motor del vehículo</option>
+								    <option value="op1">Motor 1</option>
+								    <option value="op2">Motor 2</option>
+								    <option value="op3">Motor 3</option>
+								    <option value="op3">Motor n</option>
+							    </select>--> 
+							    <input list="motores" name="motor" class="form-select" placeholder="Motor del vehículo">
+											<datalist id="motores">
+												<option value="Motor 1">
+												<option value="Motor 2">
+												<option value="Motor 3">
+												<option value="Motor n">
+											</datalist>  
+                           <!--
+                            <select class="form-select">
+								    <option value="seleccione">Frecuencia de uso</option>
+								    <option value="op1">Opción 1</option>
+								    <option value="op2">Opción 2</option>
+								    <option value="op3">Opción 3</option>
+								    <option value="op3">Opción n</option>
+							    </select>
+									-->
+                            <input list="temperaturas" name="temperatura" class="form-select" placeholder="Clima de la zona de uso">
+											<datalist id="temperaturas">
+												<option value="Caluroso">
+												<option value="Templado">
+												<option value="Frío">
+											</datalist>  
+                            <input type="submit" value="BUSCAR" class="form-submit">
+                            <br>
+                            <a href="http://www.automasterchile.cl/tienda/"><input type="button" value="VER CATÁLOGO" class="form-submit"></a>
+                        </form>
+                    </div>
+                </article>
+            </section>
+            </section>
+            
+            <section class="social-network">
+               <!-- <a href="https://www.facebook.com/automasterchile" class="facebook"><span class="fa fa-facebook"></span></a>
+                <a href="https://www.linkedin.com/company/automaster-chile?trk=biz-companies-cym" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                <a href="https://twitter.com/AutoMasterChile" class="twitter"><span class="fa fa-twitter"></span></a>
+                <a href="http://www.automasterchile.cl/#contacto" class="contactme"><span class="fa fa-envelope"></span></a>-->
+                 <div>
+                <a href="https://www.facebook.com/AutoMasterChile" class="facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+                <a href="https://www.linkedin.com/company/automaster-chile" class="linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+                <a href="https://twitter.com/intent/tweet?text=Si%20no%20sabes%20que%20aceite%20elegir,%20en%20http://www.automasterchile.cl%20tienen%20la%20herramienta%20perfecta%20para%20ti!" class="twitter"><span class="fa fa-twitter"></span></a>
+                <a href="http://www.automasterchile.cl/#contacto" class="contactme" target="_blank"><span class="fa fa-envelope"></span></a>
+                </div>
+            </section>
+            <section class="like-share">
+             <div class="">
+          
+            <div class="fb-like" data-href="https://www.facebook.com/AutoMasterChile" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+            
+            </div>
+           
+            </section>
+        </section>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
