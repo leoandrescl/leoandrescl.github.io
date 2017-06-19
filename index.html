@@ -67,14 +67,19 @@
 								    <option value="op2">Camión</option>
 								    <option value="op3">Bus</option>
 							    </select>-->
-                         <input list="tipos" name="tipo" class="form-select" placeholder="Tipo de vehículo">
-											<datalist id="tipos">
-												<option value="Auto">
-												<option value="Camión">
-												<option value="Bus">
-												<!--<option value="Peugeot">
-												<option value="Renault">
-												<option value="Volkswagen">-->
+                         <input list="tipos" name="tipo" class="form-select" placeholder="Marca del vehículo">
+											<datalist id="marcas">
+												<option value="Hyundai">
+												<option value="Kia">
+												<option value="Chevrolet">
+												<option value="Suzuki">
+												<option value="Nissan">
+												<option value="Toyota">
+												<option value="Peugeot">
+												<option value="Chevrolet">
+												<option value="Ford">
+												<option value="Mazda">
+												<option value="Mitsubishi">
 											</datalist>  
                           
                            <!--
@@ -88,14 +93,14 @@
 								    <option value="op3">Volkswagen</option>
 							    </select>
                            -->
-                      <input list="marcas" name="marca" class="form-select" placeholder="Marca del vehículo">
-											<datalist id="marcas">
-												<option value="Chevrolet">
-												<option value="FIAT">
-												<option value="Ford">
-												<option value="Peugeot">
-												<option value="Renault">
-												<option value="Volkswagen">
+                      <input list="años" name="año" class="form-select" placeholder="Año del vehículo">
+											<datalist id="años">
+												<option value="1970-1980">
+												<option value="1980-1990">
+												<option value="1990-2000">
+												<option value="2000-2010">
+												<option value="2010-2017">
+												
 											</datalist>       
                             <!--<select class="form-select">
 								    <option value="seleccione">Modelo del vehículo</option>
@@ -118,12 +123,12 @@
 								    <option value="op3">Motor 3</option>
 								    <option value="op3">Motor n</option>
 							    </select>--> 
-							    <input list="motores" name="motor" class="form-select" placeholder="Motor del vehículo">
-											<datalist id="motores">
-												<option value="Motor 1">
-												<option value="Motor 2">
-												<option value="Motor 3">
-												<option value="Motor n">
+							    <input list="versiones" name="version" class="form-select" placeholder="Version">
+											<datalist id="versiones">
+												<option value="Versión 1">
+												<option value="Versión 2">
+												<option value="Versión 3">
+												<option value="Versión n">
 											</datalist>  
                            <!--
                             <select class="form-select">
@@ -134,11 +139,12 @@
 								    <option value="op3">Opción n</option>
 							    </select>
 									-->
-                            <input list="temperaturas" name="temperatura" class="form-select" placeholder="Clima de la zona de uso">
-											<datalist id="temperaturas">
-												<option value="Caluroso">
-												<option value="Templado">
-												<option value="Frío">
+                            <input list="tipos" name="tipo" class="form-select" placeholder="Tipos de Aceite">
+											<datalist id="tipos">
+												<option value="Aceite sintético">
+												<option value="Semi-sintético">
+												<option value="De alto kilometraje">
+												<option value="Convencional">
 											</datalist>  
                             <input type="submit" value="BUSCAR" class="form-submit">
                             <br>
